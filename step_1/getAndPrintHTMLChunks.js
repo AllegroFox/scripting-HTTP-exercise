@@ -14,7 +14,7 @@ function getAndPrintHTMLChunks () {
 
     response.on('data', function(data) {
       console.log('Data received. Chunk size: ', data.length);
-      console.log(data, 'n/');
+      console.log(data + '\n');
     });
 
     response.on('end', function() {
