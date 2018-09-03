@@ -9,7 +9,16 @@ function getAndPrintHTMLChunks () {
   };
 
   https.get(requestOptions, function(response){
-    console.log(response);
+
+    response.setEncoding('utf8');
+
+    response.on('data', function(data) {
+      console.log('Data received. Chunk size: ', data.length);
+    });
+
+    response.on('end', function() {
+      console.log('Response ended.');
+    });
   })
 }
 
