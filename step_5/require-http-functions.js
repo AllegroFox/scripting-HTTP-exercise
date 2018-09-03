@@ -11,4 +11,4 @@ function printHTML (html) {
 
 };
 
-getHTML(options, printHTML());
+getHTML(options, printHTML);

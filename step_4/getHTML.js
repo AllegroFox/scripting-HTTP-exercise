@@ -25,7 +25,9 @@ function getHTML (options, callback) {
 }
 
 function printHTML (html) {
-  console.log(html);
+  let dataArray = [];
+      dataArray.push(html);
+      console.log(dataArray.join('\n'));
 }
 
 getHTML();

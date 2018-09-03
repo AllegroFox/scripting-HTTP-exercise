@@ -19,11 +19,5 @@ module.exports = function getHTML (options, callback) {
   })
 }
 
-// function printHTML (html) {
-//   let dataArray = [];
-//       dataArray.push(html);
-//       console.log(dataArray.join('\n'));
-
-// };
 
 
